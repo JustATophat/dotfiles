@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "receive-sound": {
+      "exec": "paplay /usr/share/sounds/freedesktop/stereo/bell.oga",
+      "run-on": "receive",
+      "app-name": ".*"
+    }
+  },
+  "widgets": [
+    "title",
+    "notifications",
+    "dnd"
+  ],
+  "notification-icon-size": 48,
+  "app-icon": false,
+  "positionX": "center",
+  "control-center-positionX": "center"
+}
