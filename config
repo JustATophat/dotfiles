@@ -1,0 +1,43 @@
+{
+    "position": "top",
+    "height": 40,
+    "margin-left": 10,
+    "margin-right": 10,
+    "margin-top": 10,
+    "reload_style_on_change": true,
+
+    "modules-center": [
+    	"custom/spacer",
+    	"clock",
+    	"custom/spacer",
+        "hyprland/workspaces",
+        "custom/spacer",
+        "tray",
+        "custom/spacer",
+    ],
+
+    "custom/spacer": {
+		"format": " ",
+		"tooltip": false
+    },
+    
+    "hyprland/workspaces": {
+    	"enable-bar-scroll": true
+    },
+
+    "clock": {
+        "format": "{:%H:%M}",
+        "tooltip": false,
+    	"exec-if": "which swaync-client",
+    	"exec": "swaync-client -swb",
+    	"on-click": "swaync-client -t -sw",
+    	"on-click-middle": "swaync-client -C",
+    	"on-click-right": "swaync-client -d -sw && swaync-client -D",
+    	"escape": true,
+    },
+
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    }
+}
